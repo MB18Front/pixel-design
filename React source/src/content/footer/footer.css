@@ -1,0 +1,7 @@
+footer {
+  height: 100vh;
+  transition: 2s ease;
+}
+#cdp{
+  filter: invert(1);
+}

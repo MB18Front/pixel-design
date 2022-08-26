@@ -1,0 +1,28 @@
+.event {
+  border-bottom : #fff 2px solid;
+  position: relative;
+}
+.event::before {
+  content: '> ';
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.event::after{
+  content: '';
+  inset: 0;
+  height: 2px;
+  background: linear-gradient(var(--bs-primary) , #00f);
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  width: 0;
+  transition: 1s;
+}
+.event:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+.event:hover::before {
+  opacity: 1;
+}

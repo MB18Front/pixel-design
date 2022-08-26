@@ -1,0 +1,11 @@
+header{
+  min-height: 100vh;
+  max-width: 100%;
+
+}
+header .col-lg-6{
+  z-index: 2;
+}
+.header-heading{
+  text-shadow: #fff 0 0 10px;
+}

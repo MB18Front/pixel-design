@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+*{
+  font-family: 'Silkscreen',cursive;
+  cursor: none;
+  transition: 0.25s ease;
+  padding: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.font-90 {
+  font-size: 90px;
+}
+#light {
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  background: rgb(255, 255, 255 , 0.5);
+  border-radius: 50%;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+  transform: translate(10%);
+  z-index: 100;
+  border: #fff 1px solid;
+  box-shadow: #fff 0 0 10px;
+}
+
+*:hover{
+  text-shadow: none;
+  box-shadow: none;
+} 
+
+/*toggle*/
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.25s linear;
+    transition: 0.25s linear;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.25s linear;
+  transition: 0.25s linear;
+
+}
+
+input:checked+.slider {
+  background-color: #ccc;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.toggle-st{
+  z-index: 10;
+  max-width: 150px;
+  max-height: 150px;
+  width: 150px; height: 150px;
+  border-bottom-right-radius: 100%;
+  /* transform: translateX(-50%) translateY(-50%); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 30px 0;
+  left: 0%;
+  top: 0%;
+}
+
+.shape1,
+.shape2 {
+  width: 33.1px;
+  max-width: 100%;
+  height: 33.1px;
+  max-height: 33.1px;
+}
+
+.shape1 {
+  background: var(--bs-primary);
+
+}
+
+.design-el {
+  right: 0;
+  max-height: 100vh;
+  z-index: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .design-el {
+    opacity: 0.5;
+  }
+
+}
+.mb-10{
+  margin-bottom: 100px;
+}

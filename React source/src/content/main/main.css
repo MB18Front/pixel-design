@@ -1,0 +1,7 @@
+main {
+  margin-bottom: 0;
+  max-width: 100%;
+}
+main h2::before {
+  content: '>  ';
+}
